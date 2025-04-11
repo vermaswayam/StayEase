@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Sign In</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: lightgray;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: grid;
+      gap: 10px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid lightgray;
+      border-radius: 3px;
+    }
+
+    input[type="submit"] {
+      background-color: darkgreen;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    input[type="submit"]:hover {
+      background-color: blueviolet;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Hotel Sign In</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <input type="submit" value="Sign In">
+    </form>
+  </div>
+</body>
+</html>
